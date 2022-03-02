@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: auto;
+        }
+        
+        .wrapper {
+            height: 700px;
+            width: 1089px;
+            background-color: antiquewhite;
+        }
+        
+        header {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(196, 171, 138);
+        }
+        
+        nav {
+            height: 50px;
+            width: 100%;
+            background-color: rgb(119, 75, 18);
+        }
+        
+        .content {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(81, 146, 199);
+        }
+        
+        footer {
+            height: 200px;
+            width: 100%;
+            background-color: rgb(20, 14, 5);
+        }
+        
+        aside {
+            height: 100%;
+            width: 60%;
+            background-color: rgb(40, 180, 75);
+        }
+        
+        section {
+            height: 300px;
+            width: 200px;
+            background-color: rgb(224, 228, 26);
+        }
+        
+        .menu li {
+            height: 1100%;
+            width: 200px;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-indent: 15px;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+        
+        .menu li:hover {
+            background-color: burlywood;
+        }
+        
+        li:hover>a {
+            font-size: initial;
+            font-weight: bold;
+            color: yellow;
+        }
+        
+        .menu li {
+            display: none;
+            position: absolute;
+        }
+        
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <nav>
+            <ul class="menu">
+                <li><a href="https://24h.com.vn">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+                <li><a href="">Item 4</a>
+                    <ul class="submenu">
+                        <li><a href="">Item 4.1</a></li>
+                        <li><a href="">Item 4.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Item 5</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside>
+                <article>
+
+                </article>
+            </aside>
+            <section>
+                <article>
+
+                </article>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
