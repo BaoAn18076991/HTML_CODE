@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0%;
+        }
+        body{
+            background-color: aqua;
+        }
+        .x1 {
+            height: 730px;
+            width: 1089px;
+            background-color: rgb(201, 235, 108);
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(45, 190, 118);
+        }
+        header {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(228, 177, 82);
+        }
+        .content{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(42, 165, 73);
+        }
+        .left{
+            height: 400px;
+            width: 30%;
+            float: left;
+            background-color: rgb(49, 43, 138);
+        }
+        .right{
+            height: 400px;
+            width: 70%;
+            float: right;
+            background-color: rgb(192, 190, 224);
+        }
+        footer{
+            height: 130px;
+            width: 100%;
+            background-color: rgb(21, 228, 31);
+            float: left;
+        }
+        .menu li{
+            height: 100%;
+            width: 130px;
+            background-color: aliceblue;
+            float: left;
+            line-height: 50px;
+            text-indent: 20px;
+            list-style: none;
+            position: relative;
+        }
+        .menu li:hover {
+            background-color: aqua;
+        }
+        li:hover>a{
+            color:brown;
+            font-style: italic;
+        }
+        .menu li .submenu{
+            display: none;
+            position: absolute;
+        }
+        .menu li:hover .submenu{
+            display: block;
+        }
+        nav span form #btgo{
+            padding: 3px;
+            border-radius: 50%;
+        }
+        nav span form #txtemail{
+            padding: 3px;
+            border-radius: 10%;
+        }
+        .x header p{
+            font-size: 50px;
+            text-shadow: 10px 20px 20px red;
+            text-align: center;
+        }
+        .x header:hover p {
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="x1">
+        <nav>
+            <ul class="menu">
+                <li><a href="http://24h.com.vn">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                    <ul class="submenu">
+                        <li><a href="">PHONE</a></li>
+                        <li><a href="">INTERNET</a></li>
+                        <li><a href="">TV</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+            <span>
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" name="txtemail" id="txtemail" required placeholder="nhap email" minlength="20">
+                    <input type="submit" value="GO" id="btgo">
+                </form>
+            </span>
+        </nav>
+        <header>
+            <p>GAME SHOW</p>
+        </header>
+        <div class="content">
+            <div class="left">
+                <h2>HOAT DONG</h2>
+                <img src="../kiemtra/img/hh.png" alt="" srcset="">
+            </div>
+            <div class="right">
+                <h2>DANG KY DANH SACH</h2>
+                <form action="dangky.php" method="post">
+                    <fieldset>
+                        <legend>Thong tin cua ban</legend>
+                        <label for="lblhoten">Ho Ten:</label>
+                        <input type="text" name="txtht" id="txtht" required placeholder="nhap ho ten" minlength="20"><br><br>
+                        <label for="lblgioitinh">Gioi tinh</label>
+                        <input type="radio" name="radnam" id="radnam" value="Nam">
+                        <label>Nam</label>
+                        <input type="radio" name="radnu" id="radnu" value="Nu">
+                        <label>Nu</label><br><br>
+                        <label for="Ngaysinh">Ngay sinh</label>
+                        <input type="date" name="txtdate" id="txtdate" required placeholder="Ngay sinh" minlength="20" pattern="dd/mm/yyyy">
+                        <br><br>
+                        <input type="submit" value="Go">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <footer></footer>
+        </div>
+    </div>
+</body>
+</html>
