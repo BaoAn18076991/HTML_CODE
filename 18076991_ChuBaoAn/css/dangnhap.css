@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dangnhap .row.text-center {
+    margin-left: 4%;
+}
+
+.content .dangnhap h4 {
+    margin-left: 10%;
+}
+.dangnhap form label {
+    margin-left: 10%;
+}
+
+input.btn.btn-danger {
+    margin-left: 10%;
+}
+
+.dangnhap input.form-control {
+    width: 80%;
+    margin: 0 10%;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    /* background-image: -webkit-linear-gradient(left, #414141 50%, #ad4f4f 100%); */
+    /* background-size: cover;
+    background-image: url(../images/techzones-asus-rog-zephyrus-s-gx502-nhieu-dau-tu-khung-ben-canh-ve-ngoai-an-tuong.jpg); */
+    background-image: -webkit-linear-gradient(left top, #009248 0%,#00B7FF 50%,#FFFFC7 75%,#B5FFFF 100%);
+}
+.content{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.content .dangnhap{
+    border: 1px solid gray;
+    background-color: white;
+    width: 40%;
+}

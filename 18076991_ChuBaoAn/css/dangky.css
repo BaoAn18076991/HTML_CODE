@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+i.fa.fa-eye {
+    position: absolute;
+    right: 11%;
+    top: 10%;
+    cursor: pointer;
+    font-size: 20px;
+}
+#erdangnhap,#ermatkhau,#ernhaplaimatkhau,#erhoten,#erngaysinh,#erdiachi,#ersdt,#eremail{
+    color: red;
+    font-style: italic;
+}
